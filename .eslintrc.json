@@ -1,0 +1,25 @@
+{
+  "extends": "airbnb-base",
+  "env": {
+     "es6": true,
+     "browser": true,
+     "jest": true
+  },
+  "rules": {
+    "no-restricted-syntax": [
+      "error",
+      "LabeledStatement",
+      "WithStatement"
+    ],
+    "indent": [
+      2, "tab"
+    ],
+    "no-tabs": 0,
+    "max-len": [
+      "error", { 
+        "code": 160 
+      }
+    ]
+  },
+  "parser": "@babel/eslint-parser"
+}
